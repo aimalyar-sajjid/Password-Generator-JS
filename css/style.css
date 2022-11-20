@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 232, 232);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 50%;
+    text-align: center;
+}
+
+.card-body h1
+{
+    margin-bottom: 30px;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.card input
+{
+    margin: 20px 0;
+    height: 100px;
+    border: 2px dashed lightgray;
+    text-align: center;
+    font-size: 2em;
+    outline: none;
+}
+
+.card button
+{
+    border: none;
+    background-color: rgba(138, 13, 13);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.card button:hover
+{
+    background-color: rgb(207, 12, 12);
+}
+
+@media screen and (max-width: 720px){
+    .card-body
+        {
+            width: 95%;
+        }
+}
